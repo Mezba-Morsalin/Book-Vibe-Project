@@ -20,13 +20,13 @@ const Navbar = () => {
         </>
     )
     return (
-        <header className='custom-font'>
+        <header className='custom-font shadow-[0_2px_7px_rgba(0,0,0,0.1)]'>
             <nav className='flex justify-between items-center w-11/12 lg:w-10/12 mx-auto'>
                 <div className='flex gap-3 items-center'>
                     {
                         open ? <RiCloseLine onClick={()=> setOpen(!open)} className='md:hidden text-2xl cursor-pointer text-gray-600'></RiCloseLine> : <GiHamburgerMenu onClick={()=> setOpen(!open)} className='md:hidden cursor-pointer text-2xl text-gray-600'></GiHamburgerMenu>
                     }
-                    <ul className={`lg:hidden absolute top-24 shadow-[0_2px_7px_rgba(0,0,0,0.1)] p-5 rounded-2xl space-y-4 ${open ? 'block' : 'hidden'}`}>
+                    <ul className={`lg:hidden absolute top-18 shadow-[0_2px_7px_rgba(0,0,0,0.1)] bg-white p-5 rounded-2xl space-y-4 ${open ? 'block' : 'hidden'}`}>
                         {
                             links
                         }
