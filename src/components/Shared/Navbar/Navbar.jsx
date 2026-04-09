@@ -9,13 +9,13 @@ const Navbar = () => {
     const links = (
         <>
             <li>
-                <NavLink to='/' className={({isActive}) => isActive ? 'text-green-500 border border-green-500 rounded-2xl px-4 py-2' : 'text-gray-600 px-4 py-2'}>Home</NavLink>
+                <NavLink to='/' className={({isActive}) => isActive ? 'text-green-500 font-semibold border border-green-500 rounded-2xl px-4 py-2' : 'text-gray-600 px-4 py-2'}>Home</NavLink>
             </li>
             <li>
-                <NavLink to='/books' className={({isActive}) => isActive ? 'text-green-500 border border-green-500 rounded-2xl px-4 py-2' : 'text-gray-600 px-4 py-2'}>Listed Books</NavLink>
+                <NavLink to='/books' className={({isActive}) => isActive ? 'text-green-500 font-semibold border border-green-500 rounded-2xl px-4 py-2' : 'text-gray-600 px-4 py-2'}>Listed Books</NavLink>
             </li>
             <li>
-                <NavLink to='/read' className={({isActive}) => isActive ? 'text-green-500 border border-green-500 rounded-2xl  px-4 py-2' : 'text-gray-600 px-4 py-2'}>Page to Read</NavLink>
+                <NavLink to='/read' className={({isActive}) => isActive ? 'text-green-500 font-semibold border border-green-500 rounded-2xl  px-4 py-2' : 'text-gray-600 px-4 py-2'}>Page to Read</NavLink>
             </li>
         </>
     )
