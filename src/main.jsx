@@ -9,6 +9,8 @@ import Home from './Pages/Home/Home.jsx';
 import Books from './Pages/Books/Books.jsx';
 import Error from './Err/Error.jsx';
 import ReadPage from './Pages/Read/ReadPage.jsx';
+import BookDetails from './Pages/BookDetails/BookDetails.jsx';
+import BookProvider from './BookProvider/BookProvider.jsx';
 const router = createBrowserRouter([{
   path : '/',
   Component : Layout,
@@ -23,6 +25,11 @@ const router = createBrowserRouter([{
   {
     path :'/read',
     element :<ReadPage></ReadPage>
+  },
+  {
+    path :'/bookDetails/:bookId',
+    element : <BookDetails></BookDetails>,
+    loader : () => fetch('/booksData.json').then(res => res.json())
   }
 ],
 errorElement : <Error></Error>
@@ -30,6 +37,8 @@ errorElement : <Error></Error>
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <RouterProvider router={router}></RouterProvider>
+    <BookProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </BookProvider>
   </StrictMode>,
 )

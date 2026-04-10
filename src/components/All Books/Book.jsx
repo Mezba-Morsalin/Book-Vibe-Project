@@ -1,12 +1,13 @@
 import React from 'react';
 import '../../App.css'
 import { CiStar } from 'react-icons/ci';
+import { Link } from 'react-router';
 const Book = ({book}) => {
     const {image, tags, bookName, author, category, rating} = book
     return (
-        <div className='border border-gray-300 rounded-2xl p-6 space-y-3.5'>
+        <Link to={`/bookDetails/${book.bookId}`} className='border border-gray-300 rounded-2xl p-6 space-y-3.5'>
             <div className='bg-base-300 rounded-2xl p-5'>
-                <img className='w-38 h-50 mx-auto' src={image} alt={image} />
+                <img className='w-38 h-50 mx-auto rounded' src={image} alt={image} />
             </div>
             <div className='flex gap-4'>
                 {tags.map((tag, index) => (
@@ -20,7 +21,7 @@ const Book = ({book}) => {
                 <p className='custom-font mt-2.5'>{category}</p>
                 <p className='custom-font mt-2.5 flex items-center gap-2'>{rating} <CiStar></CiStar></p>
             </div>
-        </div>
+        </Link>
     );
 };
 
