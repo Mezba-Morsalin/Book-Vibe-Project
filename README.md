@@ -1,16 +1,51 @@
-# React + Vite
+# Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Book Vibe is a reading and wishlist management app built with React. It allows users to view their read books, manage a wishlist, and sort books by different criteria.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Displays a list of read books
+- Displays a wishlist of books
+- Sorts books by pages or rating
+- Built with React and React Hooks
+- Styled using Tailwind CSS
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: For building the user interface and components
+- **React Hooks**: For state management (e.g., useState, useContext, useEffect)
+- **Tailwind CSS**: For utility-first styling
+- **DIUI (DaisyUI)**: A component library for beautiful UI elements
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Mezba-Morsalin/Book-Vibe-Project
+
+npm install
+
+npm start
+
+Project Structure
+BookProvider/BookProvider.js: Provides context and state for the book lists (read and wishlist).
+Books.jsx: Main component with tabs for the read list and wishlist, along with sorting options.
+ReadBooks.jsx: Displays individual book details for the read list.
+Wishlist.jsx: Displays individual book details for the wishlist.
+Styling
+
+This project uses:
+
+Tailwind CSS: Utility-first CSS framework for styling.
+DaisyUI: A Tailwind CSS component library for ready-to-use, customizable UI components.
+Usage
+After starting the app, you can switch between the "Read List" and "Wish List" tabs.
+Use the dropdown to sort books by either pages or rating.
+Dependencies
+React: ^17.0.2
+React Hooks: Built into React
+Tailwind CSS: ^3.x
+DaisyUI: ^3.x
+License
+
+This project is open source and available under the MIT License.
