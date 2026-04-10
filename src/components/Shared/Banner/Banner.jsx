@@ -1,6 +1,6 @@
 import React from 'react';
 import bannerImg from '../../../assets/hero_img.jpg'
-
+import '../../../App.css'
 const Banner = () => {
     return (
         <section className='w-11/12 lg:w-10/12 mx-auto mt-22'>
@@ -12,7 +12,7 @@ const Banner = () => {
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="bg-green-500 px-2 py-1 md:px-4 md:py-2 rounded-2xl text-white hover:bg-green-700 transition duration-300 cursor-pointer">Get Started</button>
+      <button className="bg-green-500 px-2 py-1 custom-font font-bold md:px-4 md:py-2 rounded-2xl text-white hover:bg-green-700 transition duration-300 cursor-pointer">Get Started</button>
     </div>
     <div>
         <img
