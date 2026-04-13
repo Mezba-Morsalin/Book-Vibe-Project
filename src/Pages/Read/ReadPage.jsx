@@ -9,7 +9,7 @@ const ReadPage = () => {
 
     }))
     return (
-        <div className='w-full h-[600px] mt-10 px-4'>
+        <div className='w-full lg:w-9/12 mx-auto h-[600px] mt-10 px-4'>
             
             <h2 className='text-3xl font-bold text-center mb-10'>
                 📊 Read Books Pages Chart
